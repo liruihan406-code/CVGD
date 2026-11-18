@@ -12,26 +12,6 @@ Human drivers do not merely extrapolate past coordinates; they continuously allo
 
 ---
 
-## 📂 Repository Structure
-
-```text
-CVGD/
-├── config.py               # Centralized hyperparameters, sequence horizons (5Hz), and loss weights
-├── loader.py               # HDF5 trajectory dataset loader with 25Hz -> 5Hz temporal alignment
-├── models/
-│   ├── __init__.py
-│   ├── teacher_model.py    # C-AVS module & Latent Autoregressive Trajectory Generator (LATG)
-│   └── student_model.py    # Compact student network & non-linear feature projection adapter
-├── train_teacher.py        # Stage 1: Teacher training with time-weighted Smooth-L1 & diversity annealing
-├── evaluate_teacher.py     # Teacher evaluation (1s-5s Best-of-K RMSE & latency profiling)
-├── train_student.py        # Stage 2: Joint multi-level knowledge distillation (GT + Feat + Logit + Traj)
-├── evaluate_student.py     # Student evaluation & deployment efficiency benchmark
-├── requirements.txt        # Python package dependencies
-└── pic/                    # Figures and qualitative trajectory visualizations
-```
-
----
-
 ## ⚙️ Installation & Data Preparation
 
 ### Environment Setup
