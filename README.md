@@ -10,10 +10,6 @@ Human drivers do not merely extrapolate past coordinates; they continuously allo
 3. **Cognitive Generative Teacher (LATG)**: Models multi-modal future distributions via Gaussian latent sampling ($z_k \sim \mathcal{N}(0, I)$) and time-conditioned autoregressive displacement synthesis.
 4. **Hierarchical Distillation Student**: Transfers decision-level intent (KL divergence), intermediate feature manifolds (Cosine alignment with projection adapters), and temporally weighted trajectory dynamics into a lightweight deployment model.
 
-<p align="center">
-  <img src="pic/Figure1.png" width="85%" alt="CVGD Framework Overview">
-</p>
-
 ---
 
 ## 📂 Repository Structure
@@ -84,10 +80,6 @@ python evaluate_student.py
 If you use this codebase or find our work helpful, please cite:
 
 ```bibtex
-@article{li2026cvgd,
-  title={Cognitive Vision-Aware Generative Distillation Framework for Robust Vehicle Trajectory Estimation},
-  author={Li, Ruihan and et al.},
-  journal={Under Review},
-  year={2026}
+@article{
 }
 ```
