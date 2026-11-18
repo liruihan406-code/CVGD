@@ -1,13 +1,5 @@
 # CVGD: Cognitive Vision-Aware Generative Distillation for Vehicle Trajectory Estimation
 
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/Paper-Under%20Review-blue.svg)]()
-
-Official PyTorch implementation of **"Cognitive Vision-Aware Generative Distillation Framework for Robust Vehicle Trajectory Estimation"**.
-
----
-
 ## 💡 Motivation & Core Architecture
 
 Human drivers do not merely extrapolate past coordinates; they continuously allocate visual attention to salient traffic participants, reason about kinematic and safety constraints (e.g., TTC, lane offset), and mentally simulate multiple plausible future maneuvers before acting.
